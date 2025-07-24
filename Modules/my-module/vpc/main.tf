@@ -22,3 +22,9 @@ variable environment {}
 output subnet {
   value = aws_subnet.main1.id
 }
+
+provider aws {
+  region = var.region
+}
+
+variable region {}

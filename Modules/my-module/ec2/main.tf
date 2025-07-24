@@ -8,6 +8,12 @@ variable ami_id {}
 variable instance_type {}
 variable subnet_id {}
 
+provider aws {
+  region = var.region
+}
+
+variable region {}
+
 # data terraform_remote_state vpc {
 #     backend = "local"
 #     config = {
